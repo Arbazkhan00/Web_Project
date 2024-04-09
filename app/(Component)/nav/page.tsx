@@ -1,26 +1,38 @@
-import Link from "next/link"
-export default function Nav(){
-    return(
-       
-            
-        <nav className="mt-4 px-36 sticky top-0 bg-none">
-          
-        <div className="flex justify-between">
+import Link from "next/link";
+
+export default function Nav() {
+  return (
+    <nav className="mt-4 px-4 sm:px-8 lg:px-36 sticky top-0 bg-none">
+      <div className="flex justify-between items-center">
         <div className="text-2xl -mt-1">LOGO</div>
-            <ul className="flex space-x-7  ">
-              <Link href={"/"}>  <li className="hover:underline">HOME</li> </Link>
-              <Link href={"/about"}>   <li className="hover:underline">ABOUT</li> </Link>
-              <Link href={"page"}>     <li className="hover:underline">PAGE</li> </Link>
-              <Link href={"/services"}>   <li className="hover:underline">SERVICES</li> </Link>
-              <Link href={"/protfolio"}>  <li className="hover:underline">PROTFOLIO</li> </Link>
-              <Link href={"/blog"}>  <li className="hover:underline">BLOG</li> </Link>
-              <Link href={"/contact"}>  <li className="hover:underline">CONTACT</li> </Link>
-            </ul>
-            <div>
-                <input type="search" name="Sreach" placeholder="Sreach" className="text-black rounded-2xl p-1 -mt-10 "/>
-            </div>
+        <ul className="flex space-x-7">
+          <NavItem href="/">HOME</NavItem>
+          <NavItem href="/about">ABOUT</NavItem>
+          <NavItem href="/page">PAGE</NavItem>
+          <NavItem href="/services">SERVICES</NavItem>
+          <NavItem href="/portfolio">PORTFOLIO</NavItem>
+          <NavItem href="/blog">BLOG</NavItem>
+          <NavItem href="/contact">CONTACT</NavItem>
+        </ul>
+        <div>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search"
+            className="text-black rounded-2xl p-1 -mt-10"
+          />
         </div>
-    
-        </nav>
-    )
+      </div>
+    </nav>
+  );
+}
+
+function NavItem({ href, children }) {
+  return (
+    <li className="hover:underline">
+      <Link href={href}>
+        {children}
+      </Link>
+    </li>
+  );
 }
