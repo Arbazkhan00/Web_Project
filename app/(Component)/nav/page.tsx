@@ -1,11 +1,12 @@
 import Link from "next/link"
-
 export default function Nav(){
     return(
-        <nav className="flex justify-between mt-4 px-36 sticky top-0 ">
-            <div className="">Logo</div>
-        <div className="">
+       
             
+        <nav className="mt-4 px-36 sticky top-0 bg-none">
+          
+        <div className="flex justify-between">
+        <div className="text-2xl -mt-1">LOGO</div>
             <ul className="flex space-x-7  ">
               <Link href={"/"}>  <li className="hover:underline">HOME</li> </Link>
               <Link href={"/about"}>   <li className="hover:underline">ABOUT</li> </Link>
@@ -15,12 +16,11 @@ export default function Nav(){
               <Link href={"/blog"}>  <li className="hover:underline">BLOG</li> </Link>
               <Link href={"/contact"}>  <li className="hover:underline">CONTACT</li> </Link>
             </ul>
+            <div>
+                <input type="search" name="Sreach" placeholder="Sreach" className="text-black rounded-2xl p-1 -mt-10 "/>
+            </div>
         </div>
-        <div className="">
-            <input type="search" placeholder="Sreach" className=" px-2 rounded-full w-36 py-1"
     
-            />
-        </div>
         </nav>
     )
 }
