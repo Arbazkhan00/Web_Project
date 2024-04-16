@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="px-4 sm:px-8 md:px-16 lg:px-28 bg-sky-500 py-12 sm:py-16 lg:py-20 text-white">
       <div className="text-center mb-8 sm:mb-12">
-        <div className="text-4xl sm:text-5xl font-semibold">We're Trusted by Our Clients</div>
+        <div className="text-4xl sm:text-5xl font-semibold">We re Trusted by Our Clients</div>
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-8 sm:gap-16">
@@ -18,8 +18,8 @@ export default function Footer() {
             <p className="text-sm ">Full Stack Developer</p>
           </div>
           <p className="mt-4 text-sm ">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-            If you are going to use a passage of Lorem Ipsum,
+            There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even slightly believable
+            If you are going to use a passage of Lorem Ipsum
           </p>
         </div>
 
@@ -32,8 +32,8 @@ export default function Footer() {
             <p className="text-sm ">FrontEnd Developer</p>
           </div>
           <p className="mt-4 text-sm ">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-            If you are going to use a passage of Lorem Ipsum,
+            There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour or randomised words which dont look even slightly believable
+            If you are going to use a passage of Lorem Ipsum
           </p>
         </div>
       </div>
