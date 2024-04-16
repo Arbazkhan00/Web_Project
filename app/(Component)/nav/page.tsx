@@ -6,13 +6,13 @@ export default function Nav() {
       <div className="flex justify-between items-center">
         <div className="text-2xl -mt-1">LOGO</div>
         <ul className="flex space-x-7">
-          <NavItem href="/">HOME</NavItem>
-          <NavItem href="/about">ABOUT</NavItem>
-          <NavItem href="/page">PAGE</NavItem>
-          <NavItem href="/services">SERVICES</NavItem>
-          <NavItem href="/portfolio">PORTFOLIO</NavItem>
-          <NavItem href="/blog">BLOG</NavItem>
-          <NavItem href="/contact">CONTACT</NavItem>
+         <li> <Link href="/">HOME</Link></li>
+         <li><Link href="/about">ABOUT</Link></li>
+         <li>  <Link href="/page">PAGE</Link></li>
+         <li><Link href="/services">SERVICES</Link></li>
+          <li><Link href="/portfolio">PORTFOLIO</Link></li>
+          <li> <Link href="/blog">BLOG</Link></li>
+          <li><Link href="/contact">CONTACT</Link></li>
         </ul>
         <div>
           <input
@@ -27,12 +27,4 @@ export default function Nav() {
   );
 }
 
-function NavItem({ href, children }) {
-  return (
-    <li className="hover:underline">
-      <Link href={href}>
-        {children}
-      </Link>
-    </li>
-  );
-}
+
